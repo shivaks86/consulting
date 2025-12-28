@@ -1,0 +1,39 @@
+# Ignore node modules (if added later)
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Build folders
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editors/IDEs
+.vscode/
+.idea/
+
+# Python (if used)
+__pycache__/
+*.py[cod]
+*.egg-info/
+venv/
+.env
+
+# Misc
+coverage/
+.sass-cache/
+.parcel-cache/
+*.swp
+
+# Dependency directories
+vendor/
+
+# Ignore dotenv local env
+.env.local

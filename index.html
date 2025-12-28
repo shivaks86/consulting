@@ -1,45 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Your description">
-    <meta name="author" content="Your name">
 
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-	<meta property="og:site_name" content="" /> <!-- website name -->
-	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Pinnacle Thoughts — Software development, digital transformation and consulting.">
+    <meta name="author" content="Pinnacle Thoughts">
+
+    <!-- Open Graph / Social meta tags -->
+    <meta property="og:site_name" content="Pinnacle Thoughts" />
+    <meta property="og:title" content="Pinnacle Thoughts — Software & Digital Transformation" />
+    <meta property="og:description" content="We help you envision, enhance & evolve ideas into reality — software development, AI, cloud and " />
+    <meta property="og:image" content="images/header-background.jpg" />
+    <meta property="og:url" content="https://pinnaclethoughts.com" />
+    <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>Spify Webpage Title</title>
-    
+    <title>Pinnacle Thoughts</title>
+
     <!-- Styles -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/fontawesome-all.css" rel="stylesheet">
     <link href="css/swiper.css" rel="stylesheet">
-	<link href="css/magnific-popup.css" rel="stylesheet">
-	<link href="css/styles.css" rel="stylesheet">
-	
-	<!-- Favicon  -->
-    <link rel="icon" href="images/favicon.png">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Favicon  -->
+    <link rel="icon" href="images/favicon_trans.png">
 </head>
+
 <body data-spy="scroll" data-target=".fixed-top">
-    
+
+      <!-- Define the SVG symbol once -->
+      <!-- <svg  id="dropdown-indicator" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+      </svg> -->
+
+
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark">
         <div class="container">
-            
+
             <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a>  
+            <a class="navbar-brand logo-image" href="index.html"><img src="images/Logo-Photoroom.png"
+                    alt="Pinnacle Thoughts">
+                
+                   <span class="logo-text">Pinnacle Thoughts</span>
+                </div>
+           </a>
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
             <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Spify</a> -->
@@ -48,48 +63,62 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <div class="navbar-collapse offcanvas-collapse" id="navbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#details">Details</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#strengths">Strengths</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#about">About</a>
-                    </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item page-scroll" href="article.html">Article Details</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="terms.html">Terms Conditions</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a>
-                        </div>
+                        <a class="nav-link" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Our Services</a>
+                           <!-- <img class="submenu-open-icon" src="/images/caret_up_icon.png" width="25px" height="10px"> -->
+                                    
+
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <div class="row">
+                                <!-- Column 1 -->
+                                <div class="col-5">
+                                    <ul class="list-unstyled">
+                                        <!-- <h6 class="dropdown-header">Our Solutions</h6> -->
+                                        <li><a class="dropdown-item" href="#">Cloud Solutions</a></li>
+                                        <li><a class="dropdown-item" href="#">Data Analytics</a></li>
+                                        <li><a class="dropdown-item" href="#">Design & Experience</a></li>
+                                        <li><a class="dropdown-item" href="#">Digital Tranformation</a>
+                                        </li>
+                                    </ul>
+                                </div> <!-- end of column 1 -->
+                                <!--Column 2-->
+                                <div class="col-4  column-divider">
+                                    <ul class="list-unstyled">
+                                        <!-- <h6 class="dropdown-header"></h6> -->
+                                        <li><a class="dropdown-item" href="#">MVP Development</a></li>
+                                        <li><a class="dropdown-item" href="#">Artifical Intelligence</a></li>
+                                        <li><a class="dropdown-item" href="#">Quality Engineer</a></li>
+                                        <li><a class="dropdown-item" href="#">Talent Transformation Services</a>
+                                        </li>
+                                    </ul>
+                                </div> 
+                              <!--Column 3-->
+                              <div class="col-3">
+                                <div class="dropdown-image-container">
+                                <div class="dd-image-card">
+                                    <img class="img-fluid" src="images/logo_header.png" alt="alternative">
+                                </div>
+                                </div>
+                            
+                            </div>
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#contact">Contact</a>
+                        <a class="nav-link page-scroll" href="#about">About Us</a>
                     </li>
+
                 </ul>
-                <span class="nav-item social-icons">
-                    <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-facebook-f fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-twitter fa-stack-1x"></i>
-                        </a>
-                    </span>
+                <span class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">Let's Contact</a>
+
                 </span>
+
             </div> <!-- end of navbar-collapse -->
         </div> <!-- end of container -->
     </nav> <!-- end of navbar -->
@@ -102,12 +131,12 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="image-container">
-                        <img class="img-fluid" src="images/header-logo.svg" alt="alternative">
+                        <!-- <img class="img-fluid" src="images/logo_header.png" alt="alternative"> -->
                     </div> <!-- end of image-container -->
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <h3>We offer complete ecommerce solutions based on Shopify</h3>
+                        <p>We assist you to Envision, Enhance & Evolve your idea into reality, exquisitely tailored to resonate with your audience.</p>
                         <a class="btn-solid-lg page-scroll" href="#details">Discover</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
@@ -117,43 +146,64 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                              
+                      
+                         <div class="swiper-slide">
 
-                        <!-- Card -->
-                        <div class="card">
-                            <div class="card-image">
-                                <i class="fas fa-rocket"></i>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Branding & strategy</h5>
-                                <div class="card-text">To build a solid foundation for your online shop you need a strong brand and a bulletproof strategy</div>
-                            </div>
-                        </div>
-                        <!-- end of card -->
-
-                        <!-- Card -->
-                        <div class="card">
-                            <div class="card-image">
-                                <i class="fas fa-pencil-ruler"></i>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Design & development</h5>
-                                <div class="card-text">Our team of competent designers and developers are able to create beautiful designs and structured code</div>
-                            </div>
-                        </div>
-                        <!-- end of card -->
-
-                        <!-- Card -->
+                             <!-- Card -->
                         <div class="card">
                             <div class="card-image">
                                 <i class="fas fa-chart-pie"></i>
                             </div>
                             <div class="card-body">
-                                <h5 class="card-title">Digital marketing</h5>
-                                <div class="card-text">We can deliver a comprehensive marketing plan and then execute it down to the smallest details</div>
+                                <h5 class="card-title">Digital Transformation</h5>
+                                <div class="card-text">We can deliver a comprehensive marketing plan and then execute it
+                                    down to the smallest details</div>
                             </div>
                         </div>
                         <!-- end of card -->
 
+                            <!-- Card -->
+                        <div class="card">
+                            <div class="card-image">
+                                <i class="fas fa-cogs"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Design & Experience</h5>
+                                <div class="card-text">Our team of competent designers and developers are able to create
+                                    beautiful designs and structured code</div>
+                            </div>
+                        </div>
+                        <!-- end of card -->
+
+                         <!-- Card -->
+                         <div class="card">
+                            <div class="card-image">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Staffing & Consulting</h5>
+                                <div class="card-text"> Unlock your business's full potential, with sharp insights with talent and a consulting strategy
+                                     tailored to your unique goals.</div>
+                            </div>
+                        </div>
+                        <!-- end of card -->
+                       
+                        
+                       
+                    </div>
+                          <!-- end of swiper for card 3 -->  
+             
+                        </div><!-- end of swipper wrapper -->
+
+                 </div>      <!-- end of swipper -->
+                 <!-- Navigation -->
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-pagination"></div>
+                   
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
             </div> <!-- end of container -->
@@ -163,30 +213,33 @@
 
 
     <!-- Details 1 -->
-    <div id="details" class="basic-1">
+    <div class="basic-1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-xl-5">
                     <div class="text-container">
-                        <h2>Branding & strategy</h2>
+                        <h2>Staffing & Consulting</h2>
                         <hr class="hr-heading">
-                        <p>To build a solid foundation for your online shop you need a strong brand and a bulletproof strategy. You can rely on our experience to create a beautiful and efficient online shop</p>
+                        <p>Using the latest technologies and deep industry insights, we help businesses of every size prosper by creating impactful solutions
+                             tailored to your unique needs today and for the future.</p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Delivering powerful brands for popular shops</div>
+                                <div class="media-body">Deliver top-talent and strategic guidance to drive business success.
+                                </div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Creating beautiful concepts and evocative logos</div>
+                                <div class="media-body">Prepare complete workforce solutions that align with your business goals.</div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Preparing complete branding guides and styles</div>
+                                <div class="media-body">Provide scalable and flexible staffing solutions to meet evolving business demands.
+                                </div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Speedy delivery of marketing design assets</div>
+                                <div class="media-body">Ensure seamless workforce integration for sustained growth and efficiency.</div>
                             </li>
                         </ul>
                     </div> <!-- end of text-container -->
@@ -203,7 +256,9 @@
 
 
     <!-- Details 2 -->
-    <div class="basic-2">
+    <div id="details" class="basic-exp">
+        <div class="container-fluid">
+    <div id="details-exp" class="basic-2">
         <div class="container-fluid">
             <div class="row">
                 <div class="image-area">
@@ -213,54 +268,65 @@
                 </div> <!-- end of image-area -->
                 <div class="text-area">
                     <div class="text-container">
-                        <h2>Design & development</h2>
+                        <h2>Design & Development</h2>
                         <hr class="hr-heading">
-                        <p>Our team of competent designers and developers are able to create beautiful designs and structured code that will serve your ecommerce project to establish your market position and increase revenues</p>
-                        <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox">Lightbox</a>
+                        <p>Our design and development services ensure that your applications are tailored to meet your specific requirements, enhancing efficiency and delivering seamless user experiences. We adopt robust development practices and cutting-edge technologies to deliver scalable and secure software solutions that align perfectly with your business goals. Whether you need an intuitive mobile application or a complex enterprise system, we ensure our solutions meet your exact specifications.
+                        </p>
+                        <!-- <a class="btn-solid-reg popup-with-move-anim" href="#details-lightbox">Lightbox</a> -->
                     </div> <!-- end of text-container -->
                 </div> <!-- end of text-area -->
             </div> <!-- end of row -->
         </div> <!-- end of container-fluid -->
+    </div><!-- end of container-fluid exp-->
+    </div><!-- end of basic-exp -->
     </div> <!-- end of basic-1 -->
     <!-- end of details 2 -->
 
 
     <!-- Details Lightbox -->
     <!-- Lightbox -->
-	<div id="details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
+    <div id="details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
         <div class="row">
             <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-			<div class="col-lg-8">
+            <div class="col-lg-8">
                 <div class="image-container">
                     <img class="img-fluid" src="images/details-lightbox.jpg" alt="alternative">
                 </div> <!-- end of image-container -->
-			</div> <!-- end of col -->
-			<div class="col-lg-4">
+            </div> <!-- end of col -->
+            <div class="col-lg-4">
                 <h3>Goals Setting</h3>
-				<hr>
-                <p>The app can easily help you track your personal development evolution if you take the time to set it up.</p>
+                <hr>
+                <p>The app can easily help you track your personal development evolution if you take the time to set it
+                    up.</p>
                 <h4>User Feedback</h4>
-                <p>This is a great app which can help you save time and make your live easier. And it will help improve your productivity.</p>
+                <p>This is a great app which can help you save time and make your live easier. And it will help improve
+                    your productivity.</p>
                 <ul class="list-unstyled li-space-lg">
                     <li class="media">
-                        <i class="fas fa-check"></i><div class="media-body">Splash screen panel</div>
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">Splash screen panel</div>
                     </li>
                     <li class="media">
-                        <i class="fas fa-check"></i><div class="media-body">Statistics graph report</div>
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">Statistics graph report</div>
                     </li>
                     <li class="media">
-                        <i class="fas fa-check"></i><div class="media-body">Events calendar layout</div>
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">Events calendar layout</div>
                     </li>
                     <li class="media">
-                        <i class="fas fa-check"></i><div class="media-body">Location details screen</div>
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">Location details screen</div>
                     </li>
                     <li class="media">
-                        <i class="fas fa-check"></i><div class="media-body">Onboarding steps interface</div>
+                        <i class="fas fa-check"></i>
+                        <div class="media-body">Onboarding steps interface</div>
                     </li>
                 </ul>
-                <a class="btn-solid-reg mfp-close page-scroll" href="#contact">Contact Us</a> <button class="btn-outline-reg mfp-close as-button" type="button">Back</button>
-			</div> <!-- end of col -->
-		</div> <!-- end of row -->
+                <a class="btn-solid-reg mfp-close page-scroll" href="#contact">Contact Us</a> <button
+                    class="btn-outline-reg mfp-close as-button" type="button">Back</button>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
     </div> <!-- end of lightbox-basic -->
     <!-- end of lightbox -->
     <!-- end of details lightbox -->
@@ -274,7 +340,8 @@
                     <div class="text-container">
                         <h2>Digital marketing</h2>
                         <hr class="hr-heading">
-                        <p>We can deliver a comprehensive marketing plan and then execute it down to the smallest details. Our marketing specialist will also conduct evaluations regularly and advise you</p>
+                        <p>We can deliver a comprehensive marketing plan and then execute it down to the smallest
+                            details. Our marketing specialist will also conduct evaluations regularly and advise you</p>
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
                                 <i class="fas fa-square"></i>
@@ -311,7 +378,8 @@
         <div class="container">
             <div class="row">
                 <div class="text-container">
-                    <h4>Our mission is to deliver reliable ecommerce solutions together with the necessary consulting and marketing services which will help customers achieve long term market stability</h4>
+                    <h4>Our mission is to deliver reliable ecommerce solutions together with the necessary consulting
+                        and marketing services which will help customers achieve long term market stability</h4>
                 </div> <!-- end of text-container -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -320,213 +388,7 @@
 
 
     <!-- Strengths -->
-    <div id="strengths" class="basic-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="list-unstyled li-space-lg">
-                        <li class="media">
-                            <div class="bullet">1</div>
-                            <div class="media-body">
-                                <h4>Specialized expertise</h4>
-                                <p>We've been deploying successful online shops for about 10 year and we've made it our mission to provide the best Shopify development services in the industry. Besides the shop itself we also provide branding and strategy services to create solid foundations our customers online projects</p>
-                            </div>
-                        </li>
-                        <li class="media">
-                            <div class="bullet">2</div>
-                            <div class="media-body">
-                                <h4>Shopify partner</h4>
-                                <p>Our partnership with Shopify enables us to stay on top of all platform updates and prepare them for installation in your own online store. We're in permanent communication with the Shopify design and development team so we can solve any difficult situations that can occur after major updates</p>
-                            </div>
-                        </li>
-                        <li class="media">
-                            <div class="bullet">3</div>
-                            <div class="media-body">
-                                <h4>Timely delivery</h4>
-                                <p>We take pride in delivering projects before the deadline to extend the pre-launch testing period. This ensures a smooth user experience and it also helps with bringing visitors back. You can check out or <a class="red page-scroll" href="#projects">projects section</a> below to hear straight from our customers what they think about us</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div> <!-- end of col-lg-12 -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-5 -->
-    <!-- end of strengths -->
 
-
-    <!-- Projects -->
-    <div id="projects" class="slider-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">      
-                    
-                    <!-- Text Slider -->
-                    <div class="slider-container">
-                        <div class="swiper-container text-slider">
-                            <div class="swiper-wrapper">
-                                
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="image-container">
-                                                <img class="img-fluid" src="images/project-1.jpg" alt="alternative">
-                                            </div> <!-- end of image-container -->
-                                        </div> <!-- end of col -->
-                                        <div class="col-lg-6">
-                                            <div class="text-container">
-                                                <h4>Online retailer shop</h4>
-                                                <p>We were proud to partner with Online Retailer in order to create a modern online store where customers can purchase some of the best items from the market at affordable prices</p>
-                                                <p class="testimonial-text">"I am happy to have chosen Spify for our Shopify implementation. Their specialized experience helped the project and made it available 2 weeks prior the launch date for extensive testing"</p>
-                                                <div class="testimonial-author">Michael Smith - General Manager</div>
-                                            </div> <!-- end of text-container -->
-                                        </div> <!-- end of col -->
-                                    </div> <!-- end of row -->
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="image-container">
-                                                <img class="img-fluid" src="images/project-2.jpg" alt="alternative">
-                                            </div> <!-- end of image-container -->
-                                        </div> <!-- end of col -->
-                                        <div class="col-lg-6">
-                                            <div class="text-container">
-                                                <h4>Shopify ecommerce site</h4>
-                                                <p>We were proud to partner with Online Retailer in order to create a modern online store where customers can purchase some of the best items from the market at affordable prices</p>
-                                                <p class="testimonial-text">"I am happy to have chosen Spify for our Shopify implementation. Their specialized experience helped the project and made it available 2 weeks prior the launch date for extensive testing"</p>
-                                                <div class="testimonial-author">Ronnie Blake - Sales Manager</div>
-                                            </div> <!-- end of text-container -->
-                                        </div> <!-- end of col -->
-                                    </div> <!-- end of row -->
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-
-                                <!-- Slide -->
-                                <div class="swiper-slide">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <div class="image-container">
-                                                <img class="img-fluid" src="images/project-3.jpg" alt="alternative">
-                                            </div> <!-- end of image-container -->
-                                        </div> <!-- end of col -->
-                                        <div class="col-lg-6">
-                                            <div class="text-container">
-                                                <h4>Online fashion shop</h4>
-                                                <p>We were proud to partner with Online Retailer in order to create a modern online store where customers can purchase some of the best items from the market at affordable prices</p>
-                                                <p class="testimonial-text">"I am happy to have chosen Spify for our Shopify implementation. Their specialized experience helped the project and made it available 2 weeks prior the launch date for extensive testing"</p>
-                                                <div class="testimonial-author">Nicole Richter - Development Manager</div>
-                                            </div> <!-- end of text-container -->
-                                        </div> <!-- end of col -->
-                                    </div> <!-- end of row -->
-                                </div> <!-- end of swiper-slide -->
-                                <!-- end of slide -->
-
-                            </div> <!-- end of swiper-wrapper -->
-                            
-                            <!-- Add Arrows -->
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <!-- end of add arrows -->
-
-                        </div> <!-- end of swiper-container -->
-                    </div> <!-- end of slider-container -->
-                    <!-- end of text slider -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of slider-1 -->
-    <!-- end of projects -->
-
-
-    <!-- About -->
-    <div id="about" class="basic-6">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="text-container bg-gray">
-                        <h2>About our team</h2>
-                        <p>We are a group of designers, developers and marketers specialized in the Shopify platform. We've launched many stores in 10 years</p>
-                        <ul class="list-unstyled li-space-lg">
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">We love what we do and have a lot of passion</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">Shopify is our go to platform for online shops</div>
-                            </li>
-                            <li class="media">
-                                <i class="fas fa-square"></i>
-                                <div class="media-body">We are Shopify partners for about 5 years</div>
-                            </li>
-                        </ul>
-                    </div> <!-- end of text-container -->
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/about.jpg" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-6 -->
-    <!-- end of about -->
-
-
-    <!-- Invitation -->
-    <div class="basic-7">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h4>We invite you to book a consultation call with one of our Key Account Managers and we guarantee it will not be a waste of time</h4>
-                    <a class="btn-solid-lg page-scroll" href="#contact">Book Consultation</a>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of basic-7 -->
-    <!-- end of invitation -->
-
-
-    <!-- Contact -->
-    <div id="contact" class="form-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Book consultation</h2>
-                    <p class="p-heading">Don't hesitate to give us a call or just use the contact form below</p>
-                    <ul class="list-unstyled li-space-lg">
-                        <li><i class="fas fa-map-marker-alt"></i> &nbsp;22 Innovative, San Francisco, CA 94043, US</li>
-                        <li><i class="fas fa-phone"></i> &nbsp;<a href="tel:00817202212">+81 720 2212</a></li>
-                        <li><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:contact@site.com">contact@site.com</a></li>
-                    </ul>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    
-                    <!-- Contact Form -->
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
-                            <label class="label-control" for="cname">Name</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
-                            <label class="label-control" for="cemail">Email</label>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">Submit</button>
-                        </div>
-                    </form>
-                    <!-- end of contact form -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-1 -->
     <!-- end of contact -->
 
 
@@ -536,48 +398,60 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer-col first">
-                        <h6>About Spify</h6>
-                        <p class="p-small">Spify is a business website Bootstrap HTML template designed to present startups in a beautiful manner with features for description</p>
+                        <h6>Pinnacle Thoughts</h6>
+                        <p class="p-small"></p>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <div>
+                                <li><a class="page-scroll" href="#header">Home</a></li>
+                                <li><a href="/privacy.html">Privacy Policy</a></li>
+                                <li><a href="/terms.html">Terms & Conditions</a></li>
+                            </div>
+                            <li><a class="page-scroll" href="#contact">Connect With Us</a></li>
                     </div> <!-- end of footer-col -->
                     <div class="footer-col second">
-                        <h6>Links</h6>
+                        <!-- <h6>Company</h6>
                         <ul class="list-unstyled li-space-lg p-small">
-                            <li>Important: <a href="terms.html">Terms & Conditions</a>, <a href="privacy.html">Privacy Policy</a></li>
-                            <li>Useful: <a href="#">Colorpicker</a>, <a href="#">Icon Library</a>, <a href="#">Illustrations</a></li>
-                            <li>Menu: <a class="page-scroll" href="#header">Home</a>, <a class="page-scroll" href="#details">Details</a>, <a class="page-scroll" href="#strengths">Strengths</a>, <a class="page-scroll" href="#contact">Contact</a></li>
+                            <div>
+                                <li><a class="page-scroll" href="#header">Home</a></li>
+                                <li><a href="/privacy.html">Privacy Policy</a></li>
+                                <li><a href="/terms.html">Terms & Conditions</a></li>
+                            </div>
+                            <li><a class="page-scroll" href="#contact">Connect With Us</a></li> -->
+
                         </ul>
                     </div> <!-- end of footer-col -->
-                    <div class="footer-col third">
+                    <div class="footer-col third ">
                         <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
-                            </a>
+
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+
                         </span>
                         <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
-                            </a>
+
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-twitter fa-stack-1x"></i>
+
                         </span>
                         <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
-                            </a>
+
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-pinterest-p fa-stack-1x"></i>
+
                         </span>
                         <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
+
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-instagram fa-stack-1x"></i>
+
                         </span>
-                        <p class="p-small">We would love to hear from you <a href="mailto:contact@site.com"><strong>contact@site.com</strong></a></p>
+                        <p class="p-small contact-container">We would love to hear from you <a
+                                href="mailto:connect@site.com"><strong>connect@pinnaclethoughts.com</strong></a></p>
                     </div> <!-- end of footer-col -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
+    </div> <!-- end of footer -->
     <!-- end of footer -->
 
 
@@ -586,22 +460,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © <a href="#your-link">Your name</a></p>
+                    <p class="p-small">Copyright © <a href="#home">Pinnacle Thoughts. All rights Reserved</a></p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
 
-        <div class="container">
-            <div class="row"> 
-                <div class="col-lg-12">
-                    <p class="p-small">Distributed by <a href="https://themewagon.com/">Themewagon</a></p> 
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of copyright --> 
+    </div> <!-- end of copyright -->
     <!-- end of copyright -->
-    
-    	
+
+
     <!-- Scripts -->
     <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
     <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
@@ -610,4 +477,5 @@
     <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
+
 </html>
