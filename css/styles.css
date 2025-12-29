@@ -471,16 +471,22 @@ input[type='checkbox'] {
 	line-height: 0.875rem;
 	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.025);
 	margin: 0;
+	z-index: 1030; /* ensure navbar sits above content */
+	display: flex;
+	align-items: center;
 }
 
 .navbar .navbar-brand {
-	padding-top: 0.25rem;
-	padding-bottom: 1.0rem;
+	padding: 0.5rem 0;
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
 }
 
 .navbar .logo-image img {
-	width: 100px;
-	height: 75px;
+	width: auto;
+	height: 48px;
+	display: block;
 }
 
 /* .navbar .logo-text {
@@ -492,12 +498,13 @@ input[type='checkbox'] {
 } */
 
 .navbar .logo-text  {
-  font-size: 22px;
-  font-weight: 600;
-  /* color: var(--heading-color); */
-  text-align: left;
-  margin-bottom: -5%;
-  padding: 0;
+	font-size: 20px;
+	font-weight: 600;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+	line-height: 1;
 }
 
 .header .logo .brand-sub {
@@ -512,7 +519,8 @@ input[type='checkbox'] {
 
 .offcanvas-collapse {
 	position: fixed;
-	top: 1.25rem;
+	/* start the offcanvas menu immediately below the navbar */
+	top: 90px;
 	/* adjusts the height between the top of the page and the offcanvas menu */
 	bottom: 0;
 	left: 100%;
@@ -564,13 +572,76 @@ input[type='checkbox'] {
 	padding: 0;
 }
 
+/* Add top offset so fixed navbar does not cover content */
+@media (max-width: 767px) {
+	body {
+		padding-top: 56px;
+	}
+	.navbar .logo-image img {
+		height: 40px;
+	}
+}
+
+/* Mobile / Tablet adjustments */
+@media (max-width: 991.98px) {
+	/* Stack nav items vertically when collapsed */
+	.navbar .navbar-nav {
+		flex-direction: column;
+		align-items: flex-start;
+		margin-top: 0.25rem;
+	}
+
+	/* Make dropdowns behave as accordion-like blocks in mobile */
+	.navbar .dropdown .dropdown-menu {
+		position: static;
+		transform: none;
+		box-shadow: none;
+		background: transparent;
+		padding: 0;
+		width: 100%;
+	}
+
+	.navbar .dropdown-item {
+		color: #eeeeee;
+		padding-left: 1.25rem;
+	}
+}
+
+/* Tablet specific: keep dropdown floating but aligned to parent */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.navbar .dropdown .dropdown-menu {
+		position: absolute;
+		left: 0;
+		right: auto;
+		transform: none;
+		width: 320px;
+		z-index: 1060;
+		background-color: #ffffff;
+		color: #111111;
+		box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+		border-radius: 8px;
+		padding: 12px;
+	}
+
+	/* Ensure the dropdown becomes visible on hover in tablet/desktop */
+	.nav-item.dropdown:hover > .dropdown-menu {
+		display: block;
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+/* Ensure dropdown menu has high z-index site-wide */
+.navbar .dropdown .dropdown-menu {
+	z-index: 1060;
+}
+
 .navbar .nav-item .nav-link {
 	padding-top: 0.625rem;
 	padding-bottom: 0.625rem;
 	color: #eeeeee;
 	text-decoration: none;
-	display: flex;
-	gap: 20px;
+	display: inline-block;
 	transition: all 0.2s ease;
 }
 
@@ -1111,7 +1182,7 @@ input[type='checkbox'] {
 /*     Footer     */
 /******************/
 .footer {
-	padding-top: 6.5rem;
+	padding-top: 10rem;
 	padding-bottom: 2rem;
 	background-color: #000000;
 }
@@ -1149,7 +1220,7 @@ input[type='checkbox'] {
 
 .footer .footer-col.third .fa-stack .fa-stack-2x {
 	color: #adaeb3;
-ransition: all 0.2s eas
+	transition: all 0.2s ease;
 }
 
 .footer .footer-col.third .fa-stack .fa-stack-1x {
@@ -1389,7 +1460,7 @@ a:hover.back-to-top {
 	}
 
 	.navbar-nav .nav-item.dropdown .nav-link {
-		padding-right: 5px;
+		/* padding-right: 5px; */
 		/* Adjust as necessary */
 	}
 
@@ -1501,11 +1572,12 @@ a:hover.back-to-top {
 }
 
 .swiper-slide {
-   color: white;
-  text-align: center;
-  border-radius: 16px;
-  padding: 20px;
-  margin: 0 10px;
+	color: white;
+	text-align: center;
+	border-radius: 16px;
+	padding: 20px;
+	margin: 0; /* use Swiper's spaceBetween instead of CSS margins */
+	box-sizing: border-box; /* ensure padding doesn't affect width calculations */
 }
 
 

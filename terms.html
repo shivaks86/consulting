@@ -3,22 +3,24 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Your description">
-    <meta name="author" content="Your name">
 
-    <!-- OG Meta Tags to improve the way the post looks when you share the page on Facebook, Twitter, LinkedIn -->
-	<meta property="og:site_name" content="" /> <!-- website name -->
-	<meta property="og:site" content="" /> <!-- website link -->
-	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
-	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
-	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
-	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
-	<meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Pinnacle Thoughts — Software development, digital transformation and consulting.">
+    <meta name="author" content="Pinnacle Thoughts">
+
+    <!-- Open Graph / Social meta tags -->
+    <meta property="og:site_name" content="Pinnacle Thoughts" />
+    <meta property="og:title" content="Pinnacle Thoughts — Software & Digital Transformation" />
+    <meta property="og:description" content="We help you envision, enhance & evolve ideas into reality — software development, AI, cloud and " />
+    <meta property="og:image" content="images/header-background.jpg" />
+    <meta property="og:url" content="https://pinnaclethoughts.com" />
+    <meta name="twitter:card" content="summary_large_image"> <!-- to have large image post format in Twitter -->
 
     <!-- Webpage Title -->
-    <title>Terms & Conditions </title>
+    <title>Pinnacle Thoughts</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="images/favicon_trans.png">
     
     <!-- Styles -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -28,18 +30,18 @@
     <link href="css/swiper.css" rel="stylesheet">
 	<link href="css/magnific-popup.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
-	
-	<!-- Favicon  -->
-    <link rel="icon" href="images/favicon.png">
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark">
         <div class="container">
-            
-            <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a>  
+
+            <!-- Image + text Logo -->
+            <a class="navbar-brand logo-image d-flex align-items-center" href="index.html">
+                <img src="images/Logo-Photoroom.png" alt="Pinnacle Thoughts" />
+                <span class="logo-text">Pinnacle Thoughts</span>
+            </a>
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
             <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Spify</a> -->
@@ -48,48 +50,53 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <div class="navbar-collapse offcanvas-collapse" id="navbar">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html#header">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html#details">Details</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html#strengths">Strengths</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html#about">About</a>
+                        <a class="nav-link page-scroll" href="#header">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown01">
-                            <a class="dropdown-item page-scroll" href="article.html">Article Details</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="terms.html">Terms Conditions</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item page-scroll" href="privacy.html">Privacy Policy</a>
-                        </div>
+                        <a class="nav-link" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">Our Services</a>
+                           <!-- <img class="submenu-open-icon" src="/images/caret_up_icon.png" width="25px" height="10px"> -->
+                                    
+
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <div class="row">
+                                <!-- Column 1 -->
+                                <div class="col-6">
+                                    <ul class="list-unstyled">
+                                        <!-- <h6 class="dropdown-header">Our Solutions</h6> -->
+                                        <li><a class="dropdown-item" href="#">Cloud Solutions</a></li>
+                                        <li><a class="dropdown-item" href="#">Data Analytics</a></li>
+                                        <li><a class="dropdown-item" href="#">Design & Experience</a></li>
+                                        <li><a class="dropdown-item" href="#">Digital Tranformation</a>
+                                        </li>
+                                    </ul>
+                                </div> <!-- end of column 1 -->
+                                <!--Column 2-->
+                                <div class="col-6  column-divider">
+                                    <ul class="list-unstyled">
+                                        <!-- <h6 class="dropdown-header"></h6> -->
+                                        <li><a class="dropdown-item" href="#">MVP Development</a></li>
+                                        <li><a class="dropdown-item" href="#">Artifical Intelligence</a></li>
+                                        <li><a class="dropdown-item" href="#">Quality Engineer</a></li>
+                                        <li><a class="dropdown-item" href="#">Talent Transformation Services</a>
+                                        </li>
+                                    </ul>
+                                </div> 
+                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="index.html#contact">Contact</a>
+                        <a class="nav-link page-scroll" href="#about">About Us</a>
                     </li>
+
                 </ul>
-                <span class="nav-item social-icons">
-                    <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-facebook-f fa-stack-1x"></i>
-                        </a>
-                    </span>
-                    <span class="fa-stack">
-                        <a href="#your-link">
-                            <i class="fas fa-circle fa-stack-2x"></i>
-                            <i class="fab fa-twitter fa-stack-1x"></i>
-                        </a>
-                    </span>
+                <span class="nav-item">
+                    <a class="nav-link page-scroll" href="#contact">Let's Contact</a>
+
                 </span>
+
             </div> <!-- end of navbar-collapse -->
         </div> <!-- end of container -->
     </nav> <!-- end of navbar -->
@@ -215,48 +222,60 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="footer-col first">
-                        <h6>About Spify</h6>
-                        <p class="p-small">Spify is a business website Bootstrap HTML template designed to present startups in a beautiful manner with features for description</p>
+                        <h6>Pinnacle Thoughts</h6>
+                        <p class="p-small"></p>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <div>
+                                <li><a class="page-scroll" href="#header">Home</a></li>
+                                <li><a href="/privacy.html">Privacy Policy</a></li>
+                                <li><a href="/terms.html">Terms & Conditions</a></li>
+                            </div>
+                            <li><a class="page-scroll" href="#contact">Connect With Us</a></li>
                     </div> <!-- end of footer-col -->
                     <div class="footer-col second">
-                        <h6>Links</h6>
+                        <!-- <h6>Company</h6>
                         <ul class="list-unstyled li-space-lg p-small">
-                            <li>Important: <a href="terms.html">Terms & Conditions</a>, <a href="privacy.html">Privacy Policy</a></li>
-                            <li>Useful: <a href="#">Colorpicker</a>, <a href="#">Icon Library</a>, <a href="#">Illustrations</a></li>
-                            <li>Menu: <a class="page-scroll" href="#header">Home</a>, <a class="page-scroll" href="#details">Details</a>, <a class="page-scroll" href="#strengths">Strengths</a>, <a class="page-scroll" href="#contact">Contact</a></li>
+                            <div>
+                                <li><a class="page-scroll" href="#header">Home</a></li>
+                                <li><a href="/privacy.html">Privacy Policy</a></li>
+                                <li><a href="/terms.html">Terms & Conditions</a></li>
+                            </div>
+                            <li><a class="page-scroll" href="#contact">Connect With Us</a></li> -->
+
                         </ul>
                     </div> <!-- end of footer-col -->
-                    <div class="footer-col third">
+                    <div class="footer-col third ">
                         <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-facebook-f fa-stack-1x"></i>
-                            </a>
+
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-facebook-f fa-stack-1x"></i>
+
                         </span>
                         <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-twitter fa-stack-1x"></i>
-                            </a>
+
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-twitter fa-stack-1x"></i>
+
                         </span>
                         <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
-                            </a>
+
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-pinterest-p fa-stack-1x"></i>
+
                         </span>
                         <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-instagram fa-stack-1x"></i>
-                            </a>
+
+                            <i class="fas fa-circle fa-stack-2x"></i>
+                            <i class="fab fa-instagram fa-stack-1x"></i>
+
                         </span>
-                        <p class="p-small">We would love to hear from you <a href="mailto:contact@site.com"><strong>contact@site.com</strong></a></p>
+                        <p class="p-small contact-container">We would love to hear from you <a
+                                href="mailto:connect@site.com"><strong>connect@pinnaclethoughts.com</strong></a></p>
                     </div> <!-- end of footer-col -->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
-    </div> <!-- end of footer -->  
+    </div> <!-- end of footer -->
     <!-- end of footer -->
 
 
@@ -265,20 +284,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © <a href="#your-link">Your name</a></p>
+                    <p class="p-small">Copyright © <a href="#home">Pinnacle Thoughts. All rights Reserved</a></p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
 
-        
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="p-small">Distributed by <a href="https://themewagon.com/">Themewagon</a></p>
-                </div> <!-- end of col -->
-            </div> <!-- enf of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of copyright --> 
+    </div> <!-- end of copyright -->
     <!-- end of copyright -->
     
     	
