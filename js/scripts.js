@@ -61,16 +61,44 @@
     
 
     /* Text Slider - Swiper */
-	var textSlider = new Swiper('.text-slider', {
+    var textSlider = new Swiper('.text-slider', {
         autoplay: {
             delay: 4000,
             disableOnInteraction: false
-		},
+        },
         loop: true,
         navigation: {
-			nextEl: '.swiper-button-next',
-			prevEl: '.swiper-button-prev'
-		}
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        }
+    });
+
+    /* Services Slider - Swiper (.mySwiper) */
+    var servicesSwiper = new Swiper('.mySwiper', {
+        loop: true,
+        loopedSlides: 3,
+        slidesPerView: 3,
+        slidesPerGroup: 1,
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        spaceBetween: 20,
+        breakpoints: {
+            576: {
+                slidesPerView: 1
+            },
+            768: {
+                slidesPerView: 2
+            },
+            992: {
+                slidesPerView: 3
+            }
+        }
     });
 
     

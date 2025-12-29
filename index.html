@@ -20,6 +20,9 @@
     <!-- Webpage Title -->
     <title>Pinnacle Thoughts</title>
 
+    <!-- Favicon  -->
+    <link rel="icon" href="images/favicon_trans.png">
+
     <!-- Styles -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -31,9 +34,6 @@
     <link href="css/swiper.css" rel="stylesheet">
     <link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-
-    <!-- Favicon  -->
-    <link rel="icon" href="images/favicon_trans.png">
 </head>
 
 <body data-spy="scroll" data-target=".fixed-top">
@@ -48,13 +48,11 @@
     <nav class="navbar navbar-expand-md fixed-top navbar-dark">
         <div class="container">
 
-            <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="images/Logo-Photoroom.png"
-                    alt="Pinnacle Thoughts">
-                
-                   <span class="logo-text">Pinnacle Thoughts</span>
-                </div>
-           </a>
+            <!-- Image + text Logo -->
+            <a class="navbar-brand logo-image d-flex align-items-center" href="index.html">
+                <img src="images/Logo-Photoroom.png" alt="Pinnacle Thoughts" />
+                <span class="logo-text">Pinnacle Thoughts</span>
+            </a>
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
             <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Spify</a> -->
@@ -77,7 +75,7 @@
                         <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
                             <div class="row">
                                 <!-- Column 1 -->
-                                <div class="col-5">
+                                <div class="col-6">
                                     <ul class="list-unstyled">
                                         <!-- <h6 class="dropdown-header">Our Solutions</h6> -->
                                         <li><a class="dropdown-item" href="#">Cloud Solutions</a></li>
@@ -88,7 +86,7 @@
                                     </ul>
                                 </div> <!-- end of column 1 -->
                                 <!--Column 2-->
-                                <div class="col-4  column-divider">
+                                <div class="col-6  column-divider">
                                     <ul class="list-unstyled">
                                         <!-- <h6 class="dropdown-header"></h6> -->
                                         <li><a class="dropdown-item" href="#">MVP Development</a></li>
@@ -98,15 +96,6 @@
                                         </li>
                                     </ul>
                                 </div> 
-                              <!--Column 3-->
-                              <div class="col-3">
-                                <div class="dropdown-image-container">
-                                <div class="dd-image-card">
-                                    <img class="img-fluid" src="images/logo_header.png" alt="alternative">
-                                </div>
-                                </div>
-                            
-                            </div>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -136,7 +125,7 @@
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                     <div class="text-container">
-                        <p>We assist you to Envision, Enhance & Evolve your idea into reality, exquisitely tailored to resonate with your audience.</p>
+                        <p class="font-italic font-weight-bold h3 text-light mb-4">We assist you to Envision, Enhance & Evolve your idea into reality, exquisitely tailored to resonate with your audience.</p>
                         <a class="btn-solid-lg page-scroll" href="#details">Discover</a>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
@@ -146,63 +135,80 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="swiper mySwiper">
+                        <div class="swiper-container swiper mySwiper">
                             <div class="swiper-wrapper">
-                              
-                      
-                         <div class="swiper-slide">
 
-                             <!-- Card -->
-                        <div class="card">
-                            <div class="card-image">
-                                <i class="fas fa-chart-pie"></i>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Digital Transformation</h5>
-                                <div class="card-text">We can deliver a comprehensive marketing plan and then execute it
-                                    down to the smallest details</div>
-                            </div>
-                        </div>
-                        <!-- end of card -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <i class="fas fa-chart-pie"></i>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Digital Transformation</h5>
+                                            <div class="card-text">We can deliver a comprehensive marketing plan and then execute it
+                                                down to the smallest details</div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                            <!-- Card -->
-                        <div class="card">
-                            <div class="card-image">
-                                <i class="fas fa-cogs"></i>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Design & Experience</h5>
-                                <div class="card-text">Our team of competent designers and developers are able to create
-                                    beautiful designs and structured code</div>
-                            </div>
-                        </div>
-                        <!-- end of card -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <i class="fas fa-cogs"></i>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Design & Experience</h5>
+                                            <div class="card-text">Our team of competent designers and developers are able to create
+                                                beautiful designs and structured code</div>
+                                        </div>
+                                    </div>
+                                </div>
 
-                         <!-- Card -->
-                         <div class="card">
-                            <div class="card-image">
-                                <i class="fas fa-users"></i>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Staffing & Consulting</h5>
-                                <div class="card-text"> Unlock your business's full potential, with sharp insights with talent and a consulting strategy
-                                     tailored to your unique goals.</div>
-                            </div>
-                        </div>
-                        <!-- end of card -->
-                       
-                        
-                       
-                    </div>
-                          <!-- end of swiper for card 3 -->  
-             
-                        </div><!-- end of swipper wrapper -->
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <i class="fas fa-users"></i>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Staffing & Consulting</h5>
+                                            <div class="card-text"> Unlock your business's full potential, with sharp insights with talent and a consulting strategy
+                                                 tailored to your unique goals.</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <i class="fas fa-users"></i>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Example 1</h5>
+                                            <div class="card-text"> Unlock your business's full potential, with sharp insights with talent and a consulting strategy
+                                                 tailored to your unique goals.</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="card">
+                                        <div class="card-image">
+                                            <i class="fas fa-users"></i>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Example 2</h5>
+                                            <div class="card-text"> Unlock your business's full potential, with sharp insights with talent and a consulting strategy
+                                                 tailored to your unique goals.</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div><!-- end of swiper-wrapper -->
 
                  </div>      <!-- end of swipper -->
                  <!-- Navigation -->
-  <div class="swiper-button-next"></div>
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-pagination"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
                    
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
@@ -244,7 +250,7 @@
                         </ul>
                     </div> <!-- end of text-container -->
                 </div> <!-- end of col -->
-                <div class="col-lg-6 col-xl-7">
+                <div class="col-lg-6 col-xl-7 d-flex align-items-end">
                     <div class="image-container">
                         <img class="img-fluid" src="images/details-1.png" alt="alternative">
                     </div> <!-- end of image-container -->
